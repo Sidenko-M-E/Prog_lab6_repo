@@ -19,9 +19,7 @@ namespace Prog_lab6
 		public bool SetFacultyName(string bufString)
 		{
 			if (string.IsNullOrEmpty(bufString))
-			{
 				return (true);
-			}
 
 			string invalidSymbStr = "!@#$%^&*()_+1234567890-=\";:?*,./'][{}<>~` ";
 			char[] invalidSymbols = invalidSymbStr.ToCharArray();
@@ -208,7 +206,6 @@ namespace Prog_lab6
 			Console.Write("Enter quantity of students:\n");
 			if (!int.TryParse(Console.ReadLine(), out bufInt))
 				return (true);
-				
 			if (check.SetQuantityOfStudents(bufInt))
 				return (true);
 
@@ -280,15 +277,16 @@ namespace Prog_lab6
 			Console.Write("quantity of disciplines: {0}\n", quantityOfDisciplines);
 		}
 
-		static void Main(string[] args)
+		/*static void Main(string[] args)
 		{
 			Console.Write("\n--------Faculty class--------\n");
-			Console.Write("-------init method-------\n");
+			Console.Write("-------Init method-------\n");
 			Faculty myFaculty = new Faculty();
 			if (myFaculty.Init("FoIT", 180, 145, 35, 40, 20, 5, 70))
 				Console.Write("error\n");
 			else
 				myFaculty.Display();
+
 
 			Console.Write("\n------Shortcut-set methods-------\n");
 			myFaculty.SetStudentsInfo(300, 270, 30);
@@ -298,17 +296,19 @@ namespace Prog_lab6
 			else
 				myFaculty.Display();
 
-			Console.Write("\n------read method-------\n");
+
+			Console.Write("\n------Read method-------\n");
 			if (myFaculty.Read())
 				Console.Write("error\n");
 			else
 				myFaculty.Display();
+
 
 			Console.Write("\n----processing by methods----\n");
 			Console.Write("Procent of masters on faculty: {0:f2}\n", myFaculty.GetProcentOfMasters());
 			Console.Write("Procent of doctors on faculty: {0:f2}\n", myFaculty.GetProcentOfDoctors());
 			Console.Write("Students to teachers quantity: {0:f2}\n", myFaculty.GetStudToTeachRatio());
 			Console.ReadKey();
-		}
+		}*/
 	}
 }
