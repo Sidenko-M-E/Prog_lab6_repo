@@ -251,15 +251,9 @@ namespace Prog_lab6
 			if (check.SetQuantityOfDisciplines(bufInt))
 				return (true);
 
-
-			this.SetFacultyName(check.GetFacultyName());
-			this.SetQuantityOfStudents(check.GetQuantityOfStudents());
-			this.SetQuantityOfBachelors(check.GetQuantityOfBachelors());
-			this.SetQuantityOfMasters(check.GetQuantityOfMasters());
-			this.SetQuantityOfTeachers(check.GetQuantityOfTeachers());
-			this.SetQuantityOfCandidates(check.GetQuantityOfTeachers());
-			this.SetQuantityOfDoctors(check.GetQuantityOfDoctors());
-			this.SetQuantityOfDisciplines(check.GetQuantityOfDisciplines());
+			this.Init(check.GetFacultyName(), check.GetQuantityOfStudents(), check.GetQuantityOfBachelors(),
+				check.GetQuantityOfMasters(), check.GetQuantityOfTeachers(), check.GetQuantityOfTeachers(),
+				check.GetQuantityOfDoctors(), check.GetQuantityOfDisciplines());
 			return (false);
 		}
 

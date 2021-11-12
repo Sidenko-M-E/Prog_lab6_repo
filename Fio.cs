@@ -125,7 +125,7 @@ namespace Prog_lab6
 			Console.Write("FIO: {0} {1} {2}\n", surname, name, patronymic);
 		}
 
-		static void Main(string[] args)
+		/*static void Main(string[] args)
 		{
 			Console.Write("--------Fio class--------\n");
 			Console.Write("------Init method-------\n");
@@ -150,6 +150,7 @@ namespace Prog_lab6
 				myFio.Display();
 			Console.ReadKey();
 		}
+		*/
 	}
 }
 
