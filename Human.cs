@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Prog_lab6
 {
@@ -133,7 +134,7 @@ namespace Prog_lab6
 
 
 			Console.Write("Enter weight:\n");
-			if (!double.TryParse(Console.ReadLine(), out bufDouble))
+			if (!double.TryParse(Console.ReadLine(), NumberStyles.AllowDecimalPoint, CultureInfo.CreateSpecificCulture("fr-FR"), out bufDouble))
 				return (true);
 			if (check.SetWeight(bufDouble))
 				return (true);
