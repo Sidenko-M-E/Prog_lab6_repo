@@ -95,6 +95,36 @@ namespace Prog_lab6
 			else
 				myTeacher.Display();
 			Console.Write("Press any key to exit...");
+
+
+
+			Console.Write("\n--------Faculty class--------\n");
+			Console.Write("-------Init method-------\n");
+			Faculty myFaculty = new Faculty();
+			if (myFaculty.Init("FoIT", 180, 145, 35, 40, 20, 5, 70))
+				Console.Write("error\n");
+			else
+				myFaculty.Display();
+
+			Console.Write("\n------Shortcut-set methods-------\n");
+			myFaculty.SetStudentsInfo(300, 270, 30);
+			myFaculty.SetTeachersInfo(40, 33, 7);
+			if (myFaculty.SetFacultyName("Fo****IT"))
+				Console.Write("Error\n");
+			else
+				myFaculty.Display();
+
+			Console.Write("\n------Read method-------\n");
+			if (myFaculty.Read())
+				Console.Write("error\n");
+			else
+				myFaculty.Display();
+
+
+			Console.Write("\n----processing by methods----\n");
+			Console.Write("Procent of masters on faculty: {0:f2}\n", myFaculty.GetProcentOfMasters());
+			Console.Write("Procent of doctors on faculty: {0:f2}\n", myFaculty.GetProcentOfDoctors());
+			Console.Write("Students to teachers quantity: {0:f2}\n", myFaculty.GetStudToTeachRatio());
 			Console.ReadKey();
 		}
 	}
