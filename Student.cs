@@ -95,7 +95,6 @@ namespace Prog_lab6
 			return (outputString);
 		}
 
-
 		public bool Init(int bufCourse, string bufEduProg, string bufGroup, string bufFacultyName, Human bufHuman)
 		{
 			Student check = new Student();
@@ -160,7 +159,7 @@ namespace Prog_lab6
 			humanField.Display();
 		}
 
-		static void Main(string[] args)
+		/*static void Main(string[] args)
 		{
 			Fio myFio = new Fio();                          //mentioned thing
 			myFio.Init("Sidenko", "Matvey", "Evgenievich"); //mentioned thing
@@ -190,7 +189,7 @@ namespace Prog_lab6
 			else
 				myStudent.Display();
 			Console.ReadKey();
-		}
+		}*/
     }
 }
 
