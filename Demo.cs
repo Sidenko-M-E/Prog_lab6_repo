@@ -94,7 +94,6 @@ namespace Prog_lab6
 				Console.Write("error\n");
 			else
 				myTeacher.Display();
-			Console.Write("Press any key to exit...");
 
 
 
