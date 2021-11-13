@@ -150,7 +150,7 @@ namespace Prog_lab6
 			return (false);
 		}
 
-		void Display()
+		public void Display()
 		{
 			Console.Write("course: {0}\n", course);
 			Console.Write("direction of preparation: {0}\n", eduProg);
@@ -158,38 +158,6 @@ namespace Prog_lab6
 			Console.Write("faculty name: {0}\n", facultyName);
 			humanField.Display();
 		}
-
-		/*static void Main(string[] args)
-		{
-			Fio myFio = new Fio();                          //mentioned thing
-			myFio.Init("Sidenko", "Matvey", "Evgenievich"); //mentioned thing
-			Human myHuman = new Human();                    //mentioned thing
-			myHuman.Init(1984, 45, 193, 90.87, 'M', myFio); //mentioned thing
-
-
-			Console.Write("\n--------Student class--------\n");
-			Console.Write("-------init method-------\n");
-			Student myStudent = new Student();
-			if (myStudent.Init(2, "Bachelor", "PI-03", "FoIT", myHuman))
-				Console.Write("error\n");
-			else
-				myStudent.Display();
-
-			Console.Write("\n------read method------\n");
-			if (myStudent.Read())
-				Console.Write("error\n");
-			else
-				myStudent.Display();
-
-			Console.Write("\n------Set methods-------\n");
-			if (myStudent.SetCourse(4) || myStudent.SetEduProg("Master") ||
-				myStudent.SetGroup("CS-91") ||
-				myStudent.SetFacultyName("FoIT"))
-				Console.Write("error\n");
-			else
-				myStudent.Display();
-			Console.ReadKey();
-		}*/
     }
 }
 

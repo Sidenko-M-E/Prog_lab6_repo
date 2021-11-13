@@ -124,33 +124,6 @@ namespace Prog_lab6
 		{
 			Console.Write("FIO: {0} {1} {2}\n", surname, name, patronymic);
 		}
-
-		/*static void Main(string[] args)
-		{
-			Console.Write("--------Fio class--------\n");
-			Console.Write("------Init method-------\n");
-			Fio myFio = new Fio();
-			if (myFio.Init("Sidenko", "Matvey", "Evgenievich"))
-				Console.Write("error\n");
-			else
-				myFio.Display();
-
-
-			Console.Write("\n---Read method---\n");
-			if (!myFio.Read())
-				myFio.Display();
-			else
-				Console.Write("error\n");
-
-
-			Console.Write("\n------Set methods-------\n");
-			if ((myFio.SetSurname("Ivanov")) || (myFio.SetName("Ivan")) || (myFio.SetPatronymic("Ivanovich")))
-				Console.Write("error\n");
-			else
-				myFio.Display();
-			Console.ReadKey();
-		}
-		*/
 	}
 }
 

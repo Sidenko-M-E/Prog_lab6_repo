@@ -163,39 +163,5 @@ namespace Prog_lab6
 			Console.Write("gender: {0}\n", gender);
 			fioField.Display();
 		}
-
-		/*static void Main(string[] args)
-		{
-			Fio myFio = new Fio();                              //mentioned thing
-			if (myFio.Init("Sidenko", "Matvey", "Evgenievich")) //mentioned thing
-				Console.Write("error\n");                       //mentioned thing
-			else                                                //mentioned thing
-				myFio.Display();                                //mentioned thing
-
-
-			Console.Write("--------Human class--------\n");
-			Console.Write("------init method-------\n");
-			Human myHuman = new Human();
-			if (myHuman.Init(1984, 45, 193, 90.87, 'M', myFio))
-				Console.Write("error\n");
-			else
-				myHuman.Display();
-
-
-			Console.Write("\n------Read method------\n");
-			if (myHuman.Read())
-				Console.Write("error\n");
-			else
-				myHuman.Display();
-
-
-			Console.Write("\n------Set methods-------\n");
-			if (myHuman.SetId(1999) || myHuman.SetAge(27) || myHuman.SetHeight(180) ||
-				myHuman.SetWeight(80.890) || myHuman.SetGender('M'))
-				Console.Write("error\n");
-			else
-				myHuman.Display();
-			Console.ReadKey();
-		}*/
 	}
 }

@@ -127,36 +127,5 @@ namespace Prog_lab6
 			Console.Write("faculty name: {0}\n", facultyName);
 			humanField.Display();
 		}
-
-		static void Main(string[] args)
-		{
-			Fio myFio = new Fio();                          //mentioned thing
-			myFio.Init("Sidenko", "Matvey", "Evgenievich"); //mentioned thing
-			Human myHuman = new Human();                    //mentioned thing
-			myHuman.Init(1984, 45, 193, 90.87, 'M', myFio); //mentioned thing
-
-
-			Console.Write("\n--------Teacher class--------\n");
-			Console.Write("-------init method-------\n");
-			Teacher myTeacher = new Teacher();
-			if (myTeacher.Init(40, "Candidate of Mathematical Sciences", "FoIT", myHuman))
-				Console.Write("error\n");
-			else
-				myTeacher.Display();
-
-			Console.Write("\n------read method------\n");
-			if (myTeacher.Read())
-				Console.Write("error\n");
-			else
-				myTeacher.Display();
-
-			Console.Write("\n------Set methods-------\n");
-			if (myTeacher.SetWorkExp(30) || myTeacher.SetDegree("Doctor of Mathematical Sciences") || myTeacher.SetFacultyName("SMTH"))
-				Console.Write("error\n");
-			else
-				myTeacher.Display();
-			Console.Write("Press any key to exit...");
-			Console.ReadKey();
-		}
 	}
 }
