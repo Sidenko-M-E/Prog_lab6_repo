@@ -39,6 +39,7 @@
     <Compile Include="Faculty.cs" />
     <Compile Include="Fio.cs" />
     <Compile Include="Human.cs" />
+    <Compile Include="Student.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -107,42 +107,42 @@ namespace Prog_lab6
 		public bool Read()
 		{
 			Human check = new Human();
-			int intBuf;
-			double doubleBuf;
-			char charBuf;
+			int bufInt;
+			double bufDouble;
+			char bufChar;
 
 			Console.Write("Enter id:\n");
-			if (!int.TryParse(Console.ReadLine(), out intBuf))
+			if (!int.TryParse(Console.ReadLine(), out bufInt))
 				return (true);
-			if (check.SetId(intBuf))
+			if (check.SetId(bufInt))
 				return (true);
 
 
 			Console.Write("Enter age:\n");
-			if (!int.TryParse(Console.ReadLine(), out intBuf))
+			if (!int.TryParse(Console.ReadLine(), out bufInt))
 				return (true);
-			if (check.SetAge(intBuf))
+			if (check.SetAge(bufInt))
 				return (true);
 
 
 			Console.Write("Enter height:\n");
-			if (!int.TryParse(Console.ReadLine(), out intBuf))
+			if (!int.TryParse(Console.ReadLine(), out bufInt))
 				return (true);
-			if (check.SetHeight(intBuf))
+			if (check.SetHeight(bufInt))
 				return (true);
 
 
 			Console.Write("Enter weight:\n");
-			if (!double.TryParse(Console.ReadLine(), out doubleBuf))
+			if (!double.TryParse(Console.ReadLine(), out bufDouble))
 				return (true);
-			if (check.SetWeight(doubleBuf))
+			if (check.SetWeight(bufDouble))
 				return (true);
 
 
 			Console.Write("Enter gender:\n");
-			if (!char.TryParse(Console.ReadLine(), out charBuf))
+			if (!char.TryParse(Console.ReadLine(), out bufChar))
 				return (true);
-			if (check.SetGender(charBuf))
+			if (check.SetGender(bufChar))
 				return (true);
 
 
@@ -164,7 +164,7 @@ namespace Prog_lab6
 			fioField.Display();
 		}
 
-		static void Main(string[] args)
+		/*static void Main(string[] args)
 		{
 			Fio myFio = new Fio();                              //mentioned thing
 			if (myFio.Init("Sidenko", "Matvey", "Evgenievich")) //mentioned thing
@@ -196,7 +196,6 @@ namespace Prog_lab6
 			else
 				myHuman.Display();
 			Console.ReadKey();
-		}
+		}*/
 	}
 }
-
