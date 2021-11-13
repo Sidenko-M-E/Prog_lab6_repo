@@ -50,7 +50,7 @@ namespace Prog_lab6
 		public bool SetWeight(double buf)
 		{
 			//round *.* format to *.1 format 
-			buf = (double)(Math.Round(buf * 10)) / 10;
+			buf = Math.Round(buf, 1, MidpointRounding.AwayFromZero);
 			if (buf < 0 || buf > 650)
 				return (true);
 			else
